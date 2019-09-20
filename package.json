@@ -36,7 +36,7 @@
   },
   "main": "index",
   "scripts": {
-    "start": "nodemon main.js",
+    "start": "node main.js",
     "test": "make test"
   }
 }
