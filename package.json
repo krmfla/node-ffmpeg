@@ -1,42 +1,18 @@
 {
-  "name": "fluent-ffmpeg",
-  "version": "2.1.2",
-  "description": "A fluent API to FFMPEG (http://www.ffmpeg.org)",
-  "keywords": [
-    "ffmpeg"
-  ],
-  "author": "Stefan Schaermeli <schaermu@gmail.com>",
-  "contributors": [
-    {
-      "name": "Felix Fichte",
-      "email": "spruce@space-ships.de"
-    }
-  ],
-  "license": "MIT",
-  "bugs": {
-    "mail": "schaermu@gmail.com",
-    "url": "http://github.com/fluent-ffmpeg/node-fluent-ffmpeg/issues"
-  },
-  "repository": "git://github.com/fluent-ffmpeg/node-fluent-ffmpeg.git",
-  "devDependencies": {
-    "mocha": "latest",
-    "should": "latest",
-    "jsdoc": "latest"
-  },
-  "dependencies": {
-    "@ffmpeg-installer/ffmpeg": "^1.0.13",
-    "async": ">=0.2.9",
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "fluent-ffmpeg": "^2.1.2",
-    "which": "^1.1.1"
-  },
-  "engines": {
-    "node": ">=0.8.0"
-  },
-  "main": "index",
-  "scripts": {
-    "start": "nodemon main.js",
-    "test": "make test"
-  }
+	"name": "speech-merge-server",
+	"version": "0.1.0",
+	"scripts": {
+		"start": "node app.js"
+	},
+	"dependencies": {
+		"@ffmpeg-installer/ffmpeg": "^1.0.20",
+		"body-parser": "^1.19.0",
+		"express": "^4.17.1",
+		"fluent-ffmpeg": "^2.1.2",
+		"formidable": "^1.2.1",
+		"multer": "^1.4.2"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.0"
+	}
 }
